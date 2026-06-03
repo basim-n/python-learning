@@ -1,0 +1,5 @@
+ch=input((f"Enter a sentence:"))
+modch=ch.split()
+print(f"words:{len(modch)}")
+print(f"output: {ch.title()}")
+print(f"Is start with I:{ch.title().startswith('I')}")
