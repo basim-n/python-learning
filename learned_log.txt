@@ -1,0 +1,4 @@
+2026-06-04:i have learned string 
+2026-06-04:i have learned functions 
+2026-06-04:i have learned files& C:/Users/muham/AppData/Local/Python/pythoncore-3.14-64/python.exe c:/Users/muham/OneDrive/Desktop/python_learning/filelog.py 
+2026-06-04:learned about dictionaries 
