@@ -11,3 +11,7 @@ toward becoming a software engineer.
 ## Progress
 Started: May 2026
 Goal: Solid Python fundamentals in 30 days
+
+## expense_tracker.py
+A command-line expense tracker with persistent JSON storage.
+Features: add expenses, view all, view total, filter by category.
