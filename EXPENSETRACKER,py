@@ -1,0 +1,77 @@
+import json
+
+def load_expenses():
+    try:
+        with open("expenses.json", "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
+def save_expenses(expenses):
+    with open("expenses.json", "w") as f:
+        json.dump(expenses, f)
+
+print("---EXPENSE TRACKER--- \n")
+expenses = load_expenses()
+while True:
+    print(f" 1. ADD EXPENSE\n 2. VIEW ALL EXPENSES\n 3. VIEW TOTAL \n 4. VIEW BY CATEGORY\n 5. EXIT\n")
+    try:
+           choice=int(input("ENTER YOUR CHOICE:"))
+           if choice == 1:
+                 category=input("Enter category:")
+                 try:
+                       amount=float(input("Enter amount:"))
+                 except ValueError:
+                       print("INVALID INPUT")
+                 description= input("Enter description:")
+                 expense={'Category':category,'amount':amount,'description':description}
+                 expenses.append(expense)
+                 save_expenses(expenses)
+                 print(f"EXPENSE SAVED!")
+
+                 
+           elif choice == 2:
+                 if len(expenses)==0:
+                             print("There is no entries.")
+                 
+                 
+                       
+                 else:
+                             for count,item in enumerate(expenses,1):
+                                    print(f"{count}.Category: {item['Category']}| Amount: {item['amount']:.2f}| Description: {item['description']}")
+           elif choice == 3:
+                 totalexpense=0
+                 for item in expenses:
+                       totalexpense+=item["amount"]
+                 print(f"TOTAL AMOUNT: {totalexpense:.2f}")
+                 
+           elif choice == 4:
+                  try:
+                         viewcategory=input(f"Enter category :")
+                         flag=0
+                         for count,item in enumerate(expenses,1):
+                                
+                                if viewcategory.lower() == item["Category"].lower():
+                                        print(f"{count}.Category: {item['Category']}| Amount: {item['amount']:.2f}| Description: {item['description']}")
+                                        flag=1
+                         if not flag:
+                                print(f"Category not found")
+                  except ValueError:
+                         print("Invalid input!")              
+                                       
+                                       
+           elif choice==5:
+                 break
+           else:
+                 print("INVALID CHOICE:")
+    except ValueError:
+          
+          print("Enter a number in (1/2/3/4/5):")
+
+
+    
+
+
+    
+
+    
