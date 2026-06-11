@@ -1,4 +1,5 @@
 chr=input("Enter a sentence:")
+print(chr.replace(" ","")[2])
 print(f"CLEANED: {chr.strip()}")
 chrmod=chr.split()
 print(f"WORDS: {len(chrmod)}")
