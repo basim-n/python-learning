@@ -1,0 +1,20 @@
+Name     : basim
+Phone    : 494902895
+Email    : basimgot@gmail.com
+Category : family
+--------------------
+Name     : jon snow
+Phone    : 67707978907
+Email    : dexter32@gmail.com
+Category : friend
+--------------------
+Name     : jake
+Phone    : 23456789086
+Email    : jake@gmail.com
+Category : classmate
+--------------------
+Name     : paul
+Phone    : 98764321
+Email    : paul@gmail.com
+Category : friend
+--------------------
