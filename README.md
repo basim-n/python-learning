@@ -15,3 +15,7 @@ Goal: Solid Python fundamentals in 30 days
 ## expense_tracker.py
 A command-line expense tracker with persistent JSON storage.
 Features: add expenses, view all, view total, filter by category.
+
+## contact_manager.py
+A command-line contact manager with persistent JSON storage.
+Features: add, view, search, update, delete, filter by category, export to text file.
