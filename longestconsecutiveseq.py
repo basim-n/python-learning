@@ -8,8 +8,8 @@ for i in st:
         current=i
         length=1
         while current+1 in st:
-            current+=1#2
-            length+=1#2
+            current+=1
+            length+=1
         longest=max(length,longest)
 print(longest)
 
