@@ -46,5 +46,17 @@ node3.next=node4
 node4.next=node5
 node5.next=None
 l1.head=node1
-print(l1.contain_cycle())
+l2=Linkedlist()
+node7=Node(2)
+node8=Node(4)
+node9=Node(6)
+node7.next=node8
+node8.next=node9
+node9.next=None
+
+
+l2.head=node7
+
+l1.printelement()
+l2.printelement()
 
