@@ -29,6 +29,7 @@ class Linkedlist:
                  if prev is None:
                       
                       head=curr1
+                      break
                       
                  else:
                     prev.next=curr1
@@ -50,38 +51,12 @@ class Linkedlist:
                                 if head == None:
                                     head = curr2
                                     prev = head
+                                    curr2=curr2.next
                                 else:
                                     prev.next=curr2
                                     prev=curr2
                                     curr2=curr2.next
         return head    
-            
-
-            
-
-
-
-
-
-
-
-    
-
-
-    def printelement(self):
-        curr=self.head
-        while curr !=None:
-            print(curr.value, end=" --> ")
-            curr=curr.next
-        print("None")
-
-
-    
-
-
-    
-
-
 l1=Linkedlist()
 
 l2=Linkedlist()
@@ -100,4 +75,25 @@ curr=result
 while curr:
      print(curr.value)
      curr=curr.next
+
+            
+
+            
+
+
+
+
+
+
+
+    
+
+
+    
+
+    
+
+
+    
+
 
