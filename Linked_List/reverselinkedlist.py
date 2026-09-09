@@ -7,6 +7,9 @@ class Linkedlist:
         self.head=None
 
     def reverse_list(self,head,left,right):
+
+         if left == right:
+             return head
          before=None
          curr=head
          next=None
