@@ -42,8 +42,7 @@ class Linkedlist:
         elif greater_head==None:
             less.next=None
             return less_head
-        else:
-            return None
+        
 
 
     
